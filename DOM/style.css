@@ -1,0 +1,93 @@
+.background {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    background-image: radial-gradient(#adb5bd 2px, transparent 2px); /* Puntos más grandes y oscuros */
+    background-size: 30px 30px;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.btn{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  color: wheat;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.grid-container {
+  display: grid;
+  border-radius: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px solid black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.rem;
+  
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 1.1em;
+  border-radius: 8px;
+
+}
+
+.product-card:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 20px -5px rgba(0,0,0,0.2);
+    border: 3px solid #0b70d5;
+    transition: transform 0.8s ease;
+    border-radius: 10px;
+    
+}
+
+.card{
+
+    border-radius: 20px 0px 20px 0px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}

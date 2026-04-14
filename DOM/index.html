@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+
+    <header>
+        <h1 style="font-family: 'Tahoma', sans-serif; align-items: center;">Mi Tienda Virtual</h1>
+        <nav id="nav-actions">
+            <button class="btn" id="btn-show-login">Login Administrador</button>
+            <button class="btn" id="btn-logout" class="hidden">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section" class="hidden">
+            <div class="card">
+                <h2 style="font-family: 'Tahoma', sans-serif;">Acceso Admin</h2>
+                <input type="text" id="user-input" placeholder="Usuario">
+                <input type="password" id="pass-input" placeholder="Contraseña">
+                <button class="btn"  id="btn-login">Ingresar</button>
+                <p id="login-error" class="error hidden">Credenciales incorrectas</p>
+            </div>
+        </section>
+
+        <section id="admin-section" class="hidden">
+            <div class="card">
+                <h2 style="font-family: 'Tahoma', sans-serif;">Gestión de Productos</h2>
+                <form id="product-form">
+                    <input type="hidden" id="edit-index">
+                    <input type="text" id="prod-name" placeholder="Nombre del producto" required>
+                    <input type="number" id="prod-price" placeholder="Precio" required>
+                    <input type="text" id="prod-img" placeholder="URL de la imagen (Ej: https://...)" required>
+                    <button class="btn" type="submit" id="btn-save-product">Guardar Producto</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="store-section">
+            <h2 style="font-family: 'Tahoma', sans-serif;">Nuestros Productos</h2>
+            <div id="products-grid" class="grid-container">
+                </div>
+        </section>
+    </main>
+     
+
+    <script src="script.js"></script>
+</body>
+</html>
